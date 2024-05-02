@@ -5,6 +5,12 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ["Inter", "sans-serif"]
+			},
+			colors: {
+				'dark-pink': "#ce5593",
+				'medium-pink': "#d16ba0",
+				'light-pink': "#d883af",
+				'gold': "#d3a031",
 			}
 		},
 	},
