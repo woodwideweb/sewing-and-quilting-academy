@@ -1,8 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../base.css";
-// import Image from "astro:assets";
-// import grass from "../images/grass.JPG";
+import { Image, Picture } from "astro:assets";
+import cherry from "../images/cherry.jpg";
+import grass from "../images/grass.jpg";
 ---
 
 <Layout title="Sewing and Quilting Academy">
@@ -14,8 +15,11 @@ import "../base.css";
     <div class="test4"></div>
     <div class="test5"></div>
 
-    <!-- ???? does not work... -->
-    <!-- <Image src={grass} alt="some grass"/> -->
+    <Image src={cherry} alt="a flower" />
+    <!-- this will hopefully make astro render jpg's for old browsers
+        though somehow my browser, which must support webp because the above tag works is displaying a jpg
+        not sure wha't happening -->
+    <Picture src={grass} formats={["avif", "webp", "jpg"]} alt="some grass" />
 </Layout>
 
 <style>
