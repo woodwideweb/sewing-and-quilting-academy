@@ -19,7 +19,8 @@ import grass from "../images/grass.jpg";
     <!-- this will hopefully make astro render jpg's for old browsers
         though somehow my browser, which must support webp because the above tag works is displaying a jpg
         not sure wha't happening -->
-    <Picture src={grass} formats={["avif", "webp", "jpg"]} alt="some grass" />
+    <!-- removed the jpg because it looks like Astro automatically picks the right fallback format for the img tag at the end -->
+    <Picture src={grass} formats={["avif", "webp"]} alt="some grass" />
 </Layout>
 
 <style>
