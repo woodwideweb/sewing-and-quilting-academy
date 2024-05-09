@@ -2,6 +2,12 @@
 export default {
 	content: ['./src/**/*.{astro,js,jsx,ts,tsx}', './src/stories/*.{js,jsx,ts,tsx}'],
 	theme: {
+		screens: {
+			'sm': '550px',
+			'md': '700px',
+			'lg': '1100px',
+			'xl': '1500px',
+		},
 		extend: {
 			fontFamily: {
 				sans: ["Inter", "sans-serif"]
