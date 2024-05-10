@@ -10,7 +10,12 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ["Inter", "sans-serif"]
+				// sans: ["Inter", "sans-serif"],
+				// this is what she used on the business card
+				sans: ["Raleway", "sans-serif"],
+				// test: ["Kalam"],
+				test: ["Oooh Baby"],
+				// test: ["Nothing You Could Do"],
 			},
 			colors: {
 				'dark-pink': "#ce5593",
