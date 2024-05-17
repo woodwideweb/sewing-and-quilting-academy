@@ -2,16 +2,19 @@
 import Layout from "../layouts/Layout.astro";
 import "../base.css";
 import { Picture } from "astro:assets";
-import cherry from "../images/cherry.jpg";
 import grass from "../images/grass.jpg";
 import Paragraph from "../components/Paragraph";
 import Header from "../components/Header";
 import HeroBlock from "../components/HeroBlock";
-// import Image from "../components/Image";
+import TextBlock from "../components/TextBlock";
 ---
 
 <Layout title="Sewing and Quilting Academy">
-    <HeroBlock />
+    <!-- <HeroBlock /> -->
+    <TextBlock
+        heading="Something"
+        text="Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet,fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+    />
 
     <div class="bg-medium-pink mb-10">
         <Header size="large" className="mb-12" fancy>
@@ -54,12 +57,9 @@ import HeroBlock from "../components/HeroBlock";
     <!-- <Image src={cherry} alt="a flower" /> -->
     <!-- this will hopefully make astro render jpg's for old browsers
         though somehow my browser, which must support webp because the above tag works is displaying a jpg
-        not sure wha't happening -->
+        not sure what's happening -->
     <!-- removed the jpg because it looks like Astro automatically picks the right fallback format for the img tag at the end -->
     <Picture src={grass} formats={["avif", "webp"]} alt="some grass" />
-    <!-- <Image src={cherry} alt="wild cherry blossoms" /> -->
-    <!-- does not work! -->
-    <!-- <Image alt="wild cherry blossoms" /> -->
 </Layout>
 
 <style>
