@@ -9,17 +9,13 @@ type Props = {
     text: string;
     direction: 'left' | 'right';
     background: 'light' | 'medium' | 'dark';
+    className: string;
     // we will also need the image eventually
 }
 
-const ImageAndTextBlock: React.FC<Props> = ({ heading, text, direction, background }) => {
-    // let backgroundColor = ""
-    // switch (background) {
-    //     case 'light'
-    // }
-
-    return <section className={cx("md:flex lg:h-[485px]x xl:h-[585px]x", `bg-${background}-pink`, direction === "right" ? "flex-row" : "flex-row-reverse")}>
-        <div className="md:w-2/3 md:py-8 xl:flexx xl:items-centexr xl:justify-centerx">
+const ImageAndTextBlock: React.FC<Props> = ({ heading, text, direction, background, className }) => {
+    return <section className={cx("relative md:flex", `bg-${background}-pink`, direction === "right" ? "flex-row" : "flex-row-reverse", className)}>
+        <div className="md:w-2/3 md:py-8 xl:py-12">
             <div>
                 <Header size="medium" fancy>{heading}</Header>
                 <Paragraph>{text}</Paragraph>
@@ -27,9 +23,7 @@ const ImageAndTextBlock: React.FC<Props> = ({ heading, text, direction, backgrou
         </div>
 
         {/* I know it's an absolute height. But it's only for small screens so is it okay? */}
-        <div className="md:w-1/3">
-            <img className="h-[300px] w-full md:w-full md:h-full object-cover" src="src/images/grass.jpg" alt="artistic picture of grass" />
-        </div>
+        <div className="h-[300px] bg-grass bg-cover md:w-1/3 md:h-auto"></div>
     </section>;
 }
 

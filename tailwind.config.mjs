@@ -22,7 +22,10 @@ export default {
 				'medium-pink': "#d16ba0",
 				'light-pink': "#d883af",
 				'gold': "#d3a031",
-			}
+			},
+			backgroundImage: {
+				'grass': "url('src/images/grass.jpg')",
+			},
 		},
 	},
 	plugins: [],

@@ -4,23 +4,34 @@
 @tailwind utilities;
 
 @layer utilities {
+  /* test, to prove that it works! */
+  .underline-dotted {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+  }
 
-    /* test, to prove that it works! */
-    .underline-dotted {
-        text-decoration-line: underline;
-        text-decoration-style: dotted;
-    }
+  .clip-test {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  }
+
+  .clip-test2 {
+    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 80%);
+  }
+
+  .clip-test3 {
+    clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+  }
 }
 
 /* is this the proper way to add a custom font to a Tailwind project? */
 @font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 100 900;
-    font-display: swap;
-    /* I seems like you have to add src for Astro to be able to find it */
-    src: url("/src/fonts/Inter.woff2") format("woff2");
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-        U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
-        U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  /* It seems like you have to add src for Astro to be able to find it */
+  src: url("/src/fonts/Inter.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
