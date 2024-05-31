@@ -25,6 +25,7 @@ export default {
 			},
 			backgroundImage: {
 				'grass': "url('src/images/grass.jpg')",
+				'beach': "url('src/images/beach.jpg')"
 			},
 		},
 	},

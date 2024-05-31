@@ -4,16 +4,22 @@ import "../base.css";
 import Paragraph from "./Paragraph";
 
 const HeroBlock: React.FC = () => {
-    return <section className="bg-medium-pink text-white flex flex-col lg:flex-row bordexr-8 border-red-900 border-solid">
-        <div className="lg:w-1/2">
-            <Header size="large" fancy={true}>Sewing and Quilting Academy</Header>
-            <Paragraph className="lg:pb-96 bg-slate-500">Something explaining something</Paragraph>
-        </div>
+  return (
+    <section className="bg-medium-pink text-white flex flex-col md:flex-row ">
+      <div className="md:w-1/3">
+        <Header size="large" fancy={true}>
+          Sewing and Quilting Academy
+        </Header>
+        <Paragraph className="lg:pb-96 ">
+          Something explaining something
+        </Paragraph>
+      </div>
 
-        <div className="lg:h-full lg:w-1/2 bg-green-500">
-            <img src="src/images/beach.jpg" className="object-cover h-[50vh] lg:h-full lg:w-full" alt="a beach" />
-        </div>
+      <div className="bg-beach bg-cover h-[50vh] md:w-2/3 md:h-[60vh] lg:h-[75vh]">
+        {/* <img src="src/images/beach.jpg" className="object-cover h-[50vh] lg:h-full lg:w-full" alt="a beach" /> */}
+      </div>
     </section>
-}
+  );
+};
 
 export default HeroBlock;
