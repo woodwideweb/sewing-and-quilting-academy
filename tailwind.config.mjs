@@ -21,6 +21,7 @@ export default {
 				'dark-pink': "#ce5593",
 				'medium-pink': "#d16ba0",
 				'light-pink': "#d883af",
+				'random-pink': "rgb(226, 156, 190)",
 				'gold': "#d3a031",
 			},
 			backgroundImage: {

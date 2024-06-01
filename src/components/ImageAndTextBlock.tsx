@@ -23,7 +23,7 @@ const ImageAndTextBlock: React.FC<Props> = ({
   return (
     <section
       className={cx(
-        "relative md:flex",
+        "md:flex",
         `bg-${background}-pink`,
         direction === "right" ? "flex-row" : "flex-row-reverse",
         className

@@ -21,6 +21,33 @@
   .clip-test3 {
     clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
   }
+
+  .shadow-medium {
+    box-shadow:
+      0px 1px 1.5px hsl(0deg 0% 0% / 0),
+      0px 4.6px 6.9px hsl(0deg 0% 0% / 0.05),
+      0px 9.3px 14px hsl(0deg 0% 0% / 0.11),
+      0px 19px 28.5px hsl(0deg 0% 0% / 0.16);
+  }
+
+  .shadow-large {
+    box-shadow:
+      0px 1px 1.5px hsl(0deg 0% 0% / 0),
+      0px 9.9px 14.9px hsl(0deg 0% 0% / 0.03),
+      0px 17.5px 26.3px hsl(0deg 0% 0% / 0.05),
+      -0.1px 25.6px 38.4px hsl(0deg 0% 0% / 0.08),
+      -0.1px 35.8px 53.7px hsl(0deg 0% 0% / 0.1),
+      -0.1px 49.6px 74.4px hsl(0deg 0% 0% / 0.13),
+      -0.1px 68.8px 103.2px hsl(0deg 0% 0% / 0.15),
+      -0.2px 95px 142.5px hsl(0deg 0% 0% / 0.18);
+  }
+
+  .shadow-small {
+    box-shadow:
+      0px 1px 1.5px hsl(0deg 0% 0% / 0),
+      0px 1.8px 2.7px hsl(0deg 0% 0% / 0.07),
+      0px 3.8px 5.7px hsl(0deg 0% 0% / 0.14);
+  }
 }
 
 /* is this the proper way to add a custom font to a Tailwind project? */
