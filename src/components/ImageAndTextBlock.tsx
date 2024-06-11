@@ -3,6 +3,7 @@ import cx from "../classnames";
 import Header from "./Header";
 import Paragraph from "./Paragraph";
 import "../base.css";
+import Button from "./Button";
 
 type Props = {
   heading: string;
@@ -31,10 +32,15 @@ const ImageAndTextBlock: React.FC<Props> = ({
     >
       <div className="md:w-2/3 md:py-8 xl:py-12">
         <div>
-          <Header size="medium" fancy>
+          <Header className="text-center sm:text-left" size="medium" fancy>
             {heading}
           </Header>
+
           <Paragraph>{text}</Paragraph>
+
+          <div className="flex justify-center md:justify-start">
+            <Button className="mx-8 mb-8 md:mx-12 lg:mx-14 ">Learn more</Button>
+          </div>
         </div>
       </div>
 

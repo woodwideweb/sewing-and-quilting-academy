@@ -4,7 +4,7 @@ import "../base.css";
 
 const ThreeImageBlock: React.FC = () => {
   return (
-    <section className="relative">
+    <section className="">
       <ImageAndTextBlock
         className=""
         heading="Something"

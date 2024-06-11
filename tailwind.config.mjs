@@ -22,6 +22,7 @@ export default {
 				'medium-pink': "#d16ba0",
 				'light-pink': "#d883af",
 				'random-pink': "rgb(226, 156, 190)",
+				// this color looks very bad... needs to be darker, I think
 				'gold': "#d3a031",
 			},
 			backgroundImage: {
