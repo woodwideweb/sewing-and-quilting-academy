@@ -38,15 +38,16 @@ const ImageAndTextBlock: React.FC<Props> = ({
         </div>
       </div>
 
-      {/* I know it's an absolute height. But it's only for small screens so is it okay? */}
-      {/* <div className="h-[300px] bg-grass bg-cover md:w-1/3 md:h-auto"></div> */}
       <div className="md:w-1/3 md:flex md:items-center md:justify-center">
+        {/* I know it's an absolute height. But it's only for small screens so is it okay? */}
         <img
           className="h-[300px] w-full object-cover md:w-5/6 md:rounded-full md:h-auto md:aspect-square md:myx-8 lg:w-[304px] xl:myx-12"
           src="/src/images/grass.jpg"
           alt="grass"
         />
       </div>
+
+      {/* <div className="h-[300px] bg-grass bg-cover md:w-1/3 md:h-auto"></div> */}
     </section>
   );
 };
