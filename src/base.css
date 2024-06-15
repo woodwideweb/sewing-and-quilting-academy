@@ -10,7 +10,7 @@
     text-decoration-style: dotted;
   }
 
-  .clip-test {
+  /* .clip-test {
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
   }
 
@@ -20,6 +20,17 @@
 
   .clip-test3 {
     clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+  } */
+
+  .visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
   }
 
   /* I should probably put these into extends, but whatever */
