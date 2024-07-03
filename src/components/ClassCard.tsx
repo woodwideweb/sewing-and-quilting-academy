@@ -16,7 +16,10 @@ const ClassCard: React.FC<Props> = ({
 }) => {
   return (
     <div
-      className={cx("bg-white max-w-[434px] rounded-xl min-h-full", className)}
+      className={cx(
+        "bg-white max-w-[434px] rounded-xl min-h-full text-left",
+        className
+      )}
     >
       {/* <div className="h-1/2 bg-grass object-cover rounded-t-xl"></div> */}
       <img
