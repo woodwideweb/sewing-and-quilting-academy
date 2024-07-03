@@ -1,6 +1,7 @@
 import React from "react";
 import Paragraph from "./Paragraph";
 import Header from "./Header";
+import flowers from "../images/Flower.jpg";
 import "../base.css";
 
 // remove props if this is a one-off component that I don't reuse, though I suspect it won't be
@@ -15,7 +16,8 @@ const CircleImageTextBlock: React.FC<Props> = ({ heading, text }) => {
       <div className="flex items-center justify-center lg:w-1/4">
         <img
           className="rounded-full aspect-square object-cover w-1/3 mt-8 sm:w-[184px] md:w-2/3 lg:w-[265px]"
-          src="src/images/Flower.jpg"
+          // src="src/images/Flower.jpg"
+          src={flowers.src}
           alt="flowers"
         />
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Paragraph from "./Paragraph";
+import beach from "../images/beach.jpg";
 import cx from "../classnames";
 
 type Props = {
@@ -23,7 +24,7 @@ const ClassCard: React.FC<Props> = ({
     >
       {/* <div className="h-1/2 bg-grass object-cover rounded-t-xl"></div> */}
       <img
-        src="/src/images/beach.jpg"
+        src={beach.src}
         alt=""
         className="rounded-t-xl h-36 w-full object-cover md:h-52"
       />
