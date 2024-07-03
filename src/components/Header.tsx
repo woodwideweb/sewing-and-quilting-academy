@@ -22,11 +22,14 @@ const Header: React.FC<Props> = ({
   switch (size) {
     case "large":
       // combine styles if I don't come up with another size that's different
-      styles += "text-3xl sm:text-4xl lg:text-5xl ";
+      styles += " text-3xl sm:text-4xl lg:text-5xl ";
+      break;
     case "medium":
-      styles += "text-3xl sm:text-4xl ";
+      styles += " text-3xl sm:text-4xl ";
+      break;
     case "small":
-      styles += "text-xl sm:text-2xl ";
+      styles += " text-xl sm:text-2xl ";
+      break;
   }
 
   // change this to return different heading tags based on the size argument

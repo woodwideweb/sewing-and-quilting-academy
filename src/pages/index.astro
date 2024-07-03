@@ -1,21 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../base.css";
-import { Picture } from "astro:assets";
-import grass from "../images/grass.jpg";
-import Paragraph from "../components/Paragraph";
-import Header from "../components/Header";
 import HeroBlock from "../components/HeroBlock";
 import TextBlock from "../components/CircleImageTextBlock";
 import ThreeImageBlock from "../components/ThreeImageBlock";
 import Nav from "../components/Nav";
-import Footer from "../components/Footer";
 import Classes from "../components/ClassSample";
 ---
 
 <Layout title="Sewing and Quilting Academy">
   <Nav />
-  <div>
+  <main>
     <HeroBlock />
 
     <TextBlock
@@ -26,65 +21,14 @@ import Classes from "../components/ClassSample";
     <ThreeImageBlock />
 
     <Classes />
-
-    <div class="bg-medium-pink">
-      <Header size="large" className="mb-12" fancy>
-        Sewing and Quilting Academy
-      </Header>
-      <Paragraph>
-        Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in
-        faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
-        Praesent rutrum sem diam, vitae egestas enim auctor sit amet.
-        Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat.
-        Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex,
-        lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus,
-        commodo eget turpis at, elementum convallis elit. Pellentesque enim
-        turpis, hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Etiam
-        tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id
-        vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris
-        risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc
-        lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis
-        egestas. In non lorem sit amet elit placerat maximus. Pellentesque
-        aliquam maximus risus, vel sed vehicula. Interdum et malesuada fames ac
-        ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet
-        dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim
-        auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet,
-        fersapien risus, commodo eget turpis at, elementum convallis elit.
-        Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
-      </Paragraph>
-    </div>
-
-    <script
-      id="setmore_script"
-      type="text/javascript"
-      src="https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js"
-    ></script><a
-      style="float:none; "
-      id="Setmore_button_iframe"
-      href="https://booking.setmore.com/scheduleappointment/55d9d244-8f33-405a-919c-3615e2c95b3a"
-      ><img
-        src="https://assets.setmore.com/setmore/images/2.0/Settings/book-now-black.svg"
-        alt="Book an appointment with Susan Miller using Setmore"
-      /></a
-    >
-
-    <div class="test bg-dark-pink mt-20"></div>
-    <div class="test2 bg-medium-pink"></div>
-    <div class="test3 bg-light-pink"></div>
-    <div class="test4 bg-gold"></div>
-    <div class="test5"></div>
-
-    <!-- <Image src={cherry} alt="a flower" /> -->
-    <!-- this will hopefully make astro render jpg's for old browsers
-        though somehow my browser, which must support webp because the above tag works is displaying a jpg
-        not sure what's happening -->
-    <!-- removed the jpg because it looks like Astro automatically picks the right fallback format for the img tag at the end -->
-    <Picture src={grass} formats={["avif", "webp"]} alt="some grass" />
-  </div>
+  </main>
 </Layout>
+
+<!-- <div class="test bg-dark-pink mt-20"></div> -->
+<!-- <div class="test2 bg-medium-pink"></div> -->
+<!-- <div class="test3 bg-light-pink"></div> -->
+<!-- <div class="test4 bg-gold"></div> -->
+<!-- <div class="test5"></div> -->
 
 <style>
   /* colors are important, do not delete */
@@ -123,4 +67,3 @@ import Classes from "../components/ClassSample";
     /* background-color: hsl(41, 57%, 54%); */
   }
 </style>
- ../components/ClassSample ../components/CircleImageTextBlock

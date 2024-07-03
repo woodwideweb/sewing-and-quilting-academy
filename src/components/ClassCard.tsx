@@ -17,7 +17,7 @@ const ClassCard: React.FC<Props> = ({
   return (
     <div
       className={cx(
-        "bg-white max-w-[434px] rounded-xl min-h-full text-left",
+        "bg-white max-w-[434px] rounded-xl sm:min-h-full text-left",
         className
       )}
     >
