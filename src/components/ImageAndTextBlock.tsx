@@ -2,7 +2,6 @@ import React from "react";
 import cx from "../classnames";
 import Header from "./Header";
 import Paragraph from "./Paragraph";
-import grass from "../images/grass.jpg";
 import "../base.css";
 import Button from "./Button";
 
@@ -51,7 +50,7 @@ const ImageAndTextBlock: React.FC<Props> = ({
         {/* I know it's an absolute height. But it's only for small screens so is it okay? */}
         <img
           className="h-[300px] w-full object-cover md:w-5/6 md:rounded-full md:h-auto md:aspect-square md:myx-8 lg:w-[304px] xl:myx-12"
-          src={grass.src}
+          src="../images/grass.jpg"
           alt="grass"
         />
       </div>
