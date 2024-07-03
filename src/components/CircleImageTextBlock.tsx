@@ -9,7 +9,7 @@ type Props = {
   text: string;
 };
 
-const TextBlock: React.FC<Props> = ({ heading, text }) => {
+const CircleImageTextBlock: React.FC<Props> = ({ heading, text }) => {
   return (
     <section className="bg-light-pink flex flex-col md:flex-row xl:py-8">
       <div className="flex items-center justify-center lg:w-1/4">
@@ -30,4 +30,4 @@ const TextBlock: React.FC<Props> = ({ heading, text }) => {
   );
 };
 
-export default TextBlock;
+export default CircleImageTextBlock;

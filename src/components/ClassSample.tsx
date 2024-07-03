@@ -3,7 +3,7 @@ import Header from "./Header";
 import Paragraph from "./Paragraph";
 import ClassCard from "./ClassCard";
 
-const Classes: React.FC = () => {
+const ClassSample: React.FC = () => {
   return (
     <section className="bg-gold text-center p-8 sm:p-12">
       <Header size="medium" fancy className="pb-4 xl:pb-6">
@@ -38,4 +38,4 @@ const Classes: React.FC = () => {
   );
 };
 
-export default Classes;
+export default ClassSample;
