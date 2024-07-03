@@ -26,22 +26,11 @@ const ClassCard: React.FC<Props> = ({
       />
 
       <div className="h-1/2 p-8 sm:p-12 lg:p-14">
-        {/* this is a mess. Remove the intrinsic padding on Header and Paragraph */}
-        <Header
-          size="small"
-          textColor="black"
-          // This really is a mess...
-          className="pb-3 !px-0 pt-0 sm:!px-0 sm:!pt-0 lg:px-0 lg:pt-0 xl:px-0 xl:pt-0 "
-        >
+        <Header size="small" textColor="black" className="pb-3">
           {heading}
         </Header>
 
-        <Paragraph
-          textColor="black"
-          className="pt-0 px-0 sm:px-0 sm:pt-0 lg:px-0 lg:pt-0 xl:pt-0 xl:px-0"
-        >
-          {description}
-        </Paragraph>
+        <Paragraph textColor="black">{description}</Paragraph>
 
         {/* booking button */}
         <div>

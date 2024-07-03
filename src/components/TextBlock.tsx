@@ -20,8 +20,8 @@ const TextBlock: React.FC<Props> = ({ heading, text }) => {
         />
       </div>
 
-      <div className="lg:w-3/4">
-        <Header size="medium" fancy className="text-center sm:text-left">
+      <div className="p-8 md:p-12 lg:p-14 lg:w-3/4 xl:p-16">
+        <Header size="medium" fancy className="pb-4 text-center sm:text-left">
           {heading}
         </Header>
         <Paragraph>{text}</Paragraph>

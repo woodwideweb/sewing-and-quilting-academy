@@ -30,9 +30,9 @@ const ImageAndTextBlock: React.FC<Props> = ({
         className
       )}
     >
-      <div className="md:w-2/3 md:py-8 xl:py-12">
+      <div className="p-8 md:p-12 md:w-2/3 lg:px-14 xl:px-16 xl:py-12">
         <div>
-          <Header className="text-center sm:text-left" size="medium" fancy>
+          <Header className="pb-4 text-center sm:text-left" size="medium" fancy>
             {heading}
           </Header>
 
@@ -52,8 +52,6 @@ const ImageAndTextBlock: React.FC<Props> = ({
           alt="grass"
         />
       </div>
-
-      {/* <div className="h-[300px] bg-grass bg-cover md:w-1/3 md:h-auto"></div> */}
     </section>
   );
 };

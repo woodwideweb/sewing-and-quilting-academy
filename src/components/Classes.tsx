@@ -6,16 +6,11 @@ import ClassCard from "./ClassCard";
 const Classes: React.FC = () => {
   return (
     <section className="bg-gold p-8 sm:p-12">
-      <Header
-        size="medium"
-        fancy
-        className="!p-0 sm:!p-0 md:!p-0 lg:!p-0 xl:!p-0"
-      >
+      <Header size="medium" fancy className="pb-4">
         Our Services
       </Header>
 
-      {/* I should not need the important selector... */}
-      <Paragraph className="p-0 !pt-4 sm:!p-0 md:!p-0 lg:p-0 xl:p-0 ">
+      <Paragraph>
         We offer classes on sewing and quilting, as well as long-arm quilting
         services
       </Paragraph>
