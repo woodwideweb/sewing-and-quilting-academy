@@ -33,6 +33,11 @@
     border: 0;
   }
 
+  .bg-gold {
+    /* new version of this color... I still don't love it */
+    background-color: hsl(39, 74%, 48%);
+  }
+
   /* I should probably put these into extends, but whatever */
 
   .shadow-medium {
