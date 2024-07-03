@@ -30,16 +30,18 @@ const ImageAndTextBlock: React.FC<Props> = ({
         className
       )}
     >
-      <div className="p-8 md:p-12 md:w-2/3 lg:px-14 xl:px-16 xl:py-12">
+      <div className="p-8 md:p-12 md:w-2/3 lg:px-14 xl:px-16 xl:py-16">
         <div>
           <Header className="pb-4 text-center sm:text-left" size="medium" fancy>
             {heading}
           </Header>
 
-          <Paragraph>{text}</Paragraph>
+          <Paragraph className="pb-4 md:pb-8 lg:pb-10 xl:pb-12">
+            {text}
+          </Paragraph>
 
           <div className="flex justify-center md:justify-start">
-            <Button className="mx-8 mb-8 md:mx-12 lg:mx-14 ">Learn more</Button>
+            <Button>Learn more</Button>
           </div>
         </div>
       </div>
