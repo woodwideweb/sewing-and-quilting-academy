@@ -1,0 +1,82 @@
+/* note to future self: to use a custom base.css, it must be in src/, and you need to pass {applyBaseStyles: false} to the Tailwind integration */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* test, to prove that it works! */
+  .underline-dotted {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+  }
+
+  /* .clip-test {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  }
+
+  .clip-test2 {
+    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 80%);
+  }
+
+  .clip-test3 {
+    clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+  } */
+
+  .visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+
+  .bg-gold {
+    /* new version of this color... I still don't love it */
+    background-color: hsl(39, 74%, 48%);
+  }
+
+  /* I should probably put these into extends, but whatever */
+
+  .shadow-medium {
+    box-shadow:
+      0px 1px 1.5px hsl(0deg 0% 0% / 0),
+      0px 4.6px 6.9px hsl(0deg 0% 0% / 0.05),
+      0px 9.3px 14px hsl(0deg 0% 0% / 0.11),
+      0px 19px 28.5px hsl(0deg 0% 0% / 0.16);
+  }
+
+  .shadow-large {
+    box-shadow:
+      0px 1px 1.5px hsl(0deg 0% 0% / 0),
+      0px 9.9px 14.9px hsl(0deg 0% 0% / 0.03),
+      0px 17.5px 26.3px hsl(0deg 0% 0% / 0.05),
+      -0.1px 25.6px 38.4px hsl(0deg 0% 0% / 0.08),
+      -0.1px 35.8px 53.7px hsl(0deg 0% 0% / 0.1),
+      -0.1px 49.6px 74.4px hsl(0deg 0% 0% / 0.13),
+      -0.1px 68.8px 103.2px hsl(0deg 0% 0% / 0.15),
+      -0.2px 95px 142.5px hsl(0deg 0% 0% / 0.18);
+  }
+
+  .shadow-small {
+    box-shadow:
+      0px 1px 1.5px hsl(0deg 0% 0% / 0),
+      0px 1.8px 2.7px hsl(0deg 0% 0% / 0.07),
+      0px 3.8px 5.7px hsl(0deg 0% 0% / 0.14);
+  }
+}
+
+/* is this the proper way to add a custom font to a Tailwind project? */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  /* It seems like you have to add src for Astro to be able to find it */
+  src: url("/src/fonts/Inter.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

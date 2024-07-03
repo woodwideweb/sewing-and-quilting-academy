@@ -1,0 +1,23 @@
+---
+// oh, for real. I can't use Picture in a React component.
+import Header from "./Header";
+import { Picture } from "astro:assets";
+import "../base.css";
+import Paragraph from "./Paragraph";
+import cherry from "../images/cherry.jpg";
+---
+
+<section class="bg-medium-pink text-white xmin-h-screen">
+    <div>
+        <Header size="large" fancy={true}>Sewing and Quilting Academy</Header>
+        <Paragraph>Est. some year</Paragraph>
+    </div>
+
+    <div>
+        <Picture
+            src={cherry}
+            alt="wild cherry blossoms"
+            formats={["avif", "webp"]}
+        />
+    </div>
+</section>
