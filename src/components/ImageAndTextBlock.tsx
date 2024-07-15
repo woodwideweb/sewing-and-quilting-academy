@@ -4,6 +4,7 @@ import Header from "./Header";
 import Paragraph from "./Paragraph";
 import "../base.css";
 import cherry from "../images/white_cherry.jpg";
+import grass from "../images/cabin_grass.jpg";
 import Button from "./Button";
 
 type Props = {
@@ -51,7 +52,7 @@ const ImageAndTextBlock: React.FC<Props> = ({
         {/* I know it's an absolute height. But it's only for small screens so is it okay? */}
         <img
           className="h-[300px] w-full object-cover md:w-5/6 md:rounded-full md:h-auto md:aspect-square md:myx-8 lg:w-[304px] xl:myx-12"
-          src={cherry.src}
+          src={grass.src}
           // src="../images/grass.jpg"
           alt="grass"
         />

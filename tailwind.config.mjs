@@ -25,10 +25,6 @@ export default {
 				// this color looks very bad... needs to be darker, I think
 				// 'gold': "#d3a031",
 			},
-			backgroundImage: {
-				'grass': `url('src/images/grass/jpg')`,
-				'beach': "url('src/images/beach.jpg')"
-			},
 		},
 	},
 	plugins: [],
