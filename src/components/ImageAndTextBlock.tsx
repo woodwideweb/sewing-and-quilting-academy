@@ -3,7 +3,7 @@ import cx from "../classnames";
 import Header from "./Header";
 import Paragraph from "./Paragraph";
 import "../base.css";
-import cherry from "../images/cherry.jpg";
+import cherry from "../images/white_cherry.jpg";
 import Button from "./Button";
 
 type Props = {
