@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import beach from "../images/beach.jpg";
 import "../base.css";
 import Paragraph from "./Paragraph";
 
@@ -15,7 +16,11 @@ const HeroBlock: React.FC = () => {
         </Paragraph>
       </div>
 
-      <div className="bg-beach bg-cover h-[50vh] md:w-2/3 md:h-[60vh] lg:h-[75vh]">
+      <div
+        className="bg-cover h-[50vh] md:w-2/3 md:h-[60vh] lg:h-[75vh]"
+        // so it works at build time
+        style={{ backgroundImage: `url(${beach.src})` }}
+      >
         {/* <img src="src/images/beach.jpg" className="object-cover h-[50vh] lg:h-full lg:w-full" alt="a beach" /> */}
       </div>
     </section>
