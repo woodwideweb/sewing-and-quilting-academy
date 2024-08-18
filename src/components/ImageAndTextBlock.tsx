@@ -3,7 +3,6 @@ import cx from "../classnames";
 import Header from "./Header";
 import Paragraph from "./Paragraph";
 import "../base.css";
-import cherry from "../images/white_cherry.jpg";
 import grass from "../images/cabin_grass.jpg";
 import Button from "./Button";
 
@@ -53,7 +52,6 @@ const ImageAndTextBlock: React.FC<Props> = ({
         <img
           className="h-[300px] w-full object-cover md:w-5/6 md:rounded-full md:h-auto md:aspect-square md:myx-8 lg:w-[304px] xl:myx-12"
           src={grass.src}
-          // src="../images/grass.jpg"
           alt="grass"
         />
       </div>

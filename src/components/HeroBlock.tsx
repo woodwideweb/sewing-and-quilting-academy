@@ -11,8 +11,16 @@ const HeroBlock: React.FC = () => {
         <Header size="large" fancy={true} className="pb-4">
           Sewing and Quilting Academy
         </Header>
-        <Paragraph className="lg:pb-96 ">
-          Something explaining something
+        {/* I don't know why this has to be inline. The address just ends up really far away if it's not */}
+        <Paragraph className="lg:pb-96 inline text-opacity-95">
+          Sewing and quilting lessons from beginner to advanced
+          <br />
+          Long-arm quilting services
+          <br />
+          <address className="mt-2 not-italic opacity-80 md:text-[17px] ">
+            275 Main Street <br />
+            Wadsworth, Ohio
+          </address>
         </Paragraph>
       </div>
 

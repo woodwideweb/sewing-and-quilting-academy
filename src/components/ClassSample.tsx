@@ -24,13 +24,13 @@ const ClassSample: React.FC = () => {
 
           <ClassCard
             heading="Basic Sewing Skills"
-            description="The perfect class for beginning sewers"
+            description="The perfect class for beginning sewers."
           />
 
           {/* is there a way to center the last item? */}
           <ClassCard
-            heading="Intro to Dressmaking"
-            description="Learn how to make your own dress! Yes, I know I'm making things up"
+            heading="Long-arm Quilting Services"
+            description="Have a quilt that needs to be quilted with a long-arm? We can take care of that."
           />
         </div>
       </div>
