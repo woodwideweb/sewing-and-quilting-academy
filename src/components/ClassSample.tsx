@@ -11,9 +11,9 @@ const ClassSample: React.FC = () => {
         What We Do
       </Header>
 
-      <Paragraph className="md:pb-3 cl:pb-6">
+      <Paragraph className="md:pb-3 xl:pb-6">
         We offer classes on sewing and quilting, as well as long-arm quilting
-        services
+        services. We also sell gift certificates!
       </Paragraph>
 
       <div className="flex w-full justify-center">
@@ -35,6 +35,11 @@ const ClassSample: React.FC = () => {
           />
         </div>
       </div>
+
+      {/* <Paragraph className="mt-16 text-xl md:text-xl xl:text-2xl">
+        We also offer{" "}
+        <span className="font-test text-3xl">gift certificates!</span>
+      </Paragraph> */}
     </section>
   );
 };
