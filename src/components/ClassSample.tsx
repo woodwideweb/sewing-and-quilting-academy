@@ -5,9 +5,10 @@ import ClassCard from "./ClassCard";
 
 const ClassSample: React.FC = () => {
   return (
-    <section className="bg-gold text-center p-8 sm:p-12">
+    <section className="bg-purple text-center p-8 sm:p-12">
       <Header size="medium" fancy className="pb-4 xl:pb-6">
-        Our Services
+        {/* Our Services */}
+        What We Do
       </Header>
 
       <Paragraph className="md:pb-3 cl:pb-6">
