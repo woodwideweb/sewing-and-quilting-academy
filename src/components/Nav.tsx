@@ -17,7 +17,7 @@ const Nav: React.FC = () => {
         </li>
 
         <li className="inline">
-          <Link href="/src/images/grass.jpg" name="Contact" />
+          <Link href="/contact" name="Contact" />
         </li>
       </ul>
     </nav>
