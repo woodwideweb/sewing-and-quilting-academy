@@ -3,17 +3,22 @@ import Header from "./Header";
 import Paragraph from "./Paragraph";
 import beach from "../images/beach.jpg";
 import cx from "../classnames";
+import SetmoreButton from "./SetmoreButton";
 
 type Props = {
   heading: string;
   description: string;
   className?: string;
+  image: string;
+  buttonType?: "view" | "book";
 };
 
 const ClassCard: React.FC<Props> = ({
   heading,
   description,
   className = "",
+  image,
+  buttonType = "view",
 }) => {
   return (
     <div
@@ -24,7 +29,8 @@ const ClassCard: React.FC<Props> = ({
     >
       {/* <div className="h-1/2 bg-grass object-cover rounded-t-xl"></div> */}
       <img
-        src={beach.src}
+        // src={beach.src}
+        src={image}
         alt=""
         className="rounded-t-xl h-36 w-full object-cover md:h-52"
       />
@@ -34,25 +40,19 @@ const ClassCard: React.FC<Props> = ({
           {heading}
         </Header>
 
-        <Paragraph textColor="black">{description}</Paragraph>
+        <Paragraph textColor="black" className="pb-4">
+          {description}
+        </Paragraph>
 
         {/* booking button */}
         <div>
-          <script
-            id="setmore_script"
-            type="text/javascript"
-            src="https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js"
-          ></script>
-          <a
-            style={{ float: "none" }}
-            id="Setmore_button_iframe"
-            href="https://booking.setmore.com/scheduleappointment/55d9d244-8f33-405a-919c-3615e2c95b3a"
-          >
-            <img
-              src="https://assets.setmore.com/setmore/images/2.0/Settings/book-now-black.svg"
-              alt="Book an appointment with Susan Miller using Setmore"
-            />
-          </a>
+          {buttonType === "view" ? (
+            <button className="bg-black font-medium text-white rounded-lg px-8 py-1.5 transition-colors ease-in duration-150 border border-black border-solid hover:bg-white hover:text-gray-900 mdx:px-10 md:py-2 lg:px-10 xl:py-2.5">
+              View
+            </button>
+          ) : (
+            <SetmoreButton />
+          )}
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Paragraph from "./Paragraph";
 import ClassCard from "./ClassCard";
+import beach from "../images/beach.jpg";
 
 const ClassSample: React.FC = () => {
   return (
@@ -21,17 +22,23 @@ const ClassSample: React.FC = () => {
           <ClassCard
             heading="Quilting Lessons"
             description="Quilting lessons from beginner to advanced levels."
+            image={beach.src}
+            buttonType="book"
           />
 
           <ClassCard
             heading="Basic Sewing Skills"
             description="The perfect class for beginning sewers."
+            image={beach.src}
+            buttonType="book"
           />
 
           {/* is there a way to center the last item? */}
           <ClassCard
             heading="Long-arm Quilting Services"
             description="Have a quilt that needs to be quilted with a long-arm? We can take care of that."
+            image={beach.src}
+            buttonType="book"
           />
         </div>
       </div>

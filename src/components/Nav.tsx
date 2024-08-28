@@ -9,15 +9,11 @@ const Nav: React.FC = () => {
     <nav className="hidden sm:block sm:sticky sm:top-0 bg-random-pink sm:w-full sm:py-4 lg:text-lg sm:shadow-small">
       <ul className="sm:flex sm:justify-around">
         <li className="inline">
-          <Link href="/src/images/grass.jpg" name="Home" />
+          <Link href="/" name="Home" />
         </li>
 
         <li className="inline">
-          <Link href="/src/images/grass.jpg" name="About" />
-        </li>
-
-        <li className="inline">
-          <Link href="/src/images/grass.jpg" name="Classes" />
+          <Link href="/classes" name="Classes" />
         </li>
 
         <li className="inline">

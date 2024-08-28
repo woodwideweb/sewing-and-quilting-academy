@@ -18,6 +18,7 @@ const HeroBlock: React.FC = () => {
           <br />
           Long-arm quilting services
           <br />
+          {/* this thing stays on top of the header! Redardless of it's display!*/}
           <address className="mt-2 not-italic opacity-80 md:text-[17px] ">
             275 Main Street <br />
             Wadsworth, Ohio
