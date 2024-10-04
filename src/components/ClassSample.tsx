@@ -3,6 +3,9 @@ import Header from "./Header";
 import Paragraph from "./Paragraph";
 import ClassCard from "./ClassCard";
 import beach from "../images/beach.jpg";
+import quilt1 from "../images/quilt-1.jpg";
+import quilt2 from "../images/quilt-2.jpg";
+import longarm from "../images/longarm.jpg";
 
 const ClassSample: React.FC = () => {
   return (
@@ -22,14 +25,14 @@ const ClassSample: React.FC = () => {
           <ClassCard
             heading="Quilting Lessons"
             description="Quilting lessons from beginner to advanced levels."
-            image={beach.src}
+            image={quilt1.src}
             buttonType="book"
           />
 
           <ClassCard
             heading="Basic Sewing Skills"
             description="The perfect class for beginning sewers."
-            image={beach.src}
+            image={quilt2.src}
             buttonType="book"
           />
 
@@ -37,7 +40,7 @@ const ClassSample: React.FC = () => {
           <ClassCard
             heading="Long-arm Quilting Services"
             description="Have a quilt that needs to be quilted with a long-arm? We can take care of that."
-            image={beach.src}
+            image={longarm.src}
             buttonType="book"
           />
         </div>

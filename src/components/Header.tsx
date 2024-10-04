@@ -5,7 +5,7 @@ import "../base.css";
 type Props = {
   fancy?: boolean;
   size: "large" | "medium" | "small";
-  textColor?: "white" | "black";
+  textColor?: "white" | "black" | "gray";
   className?: string;
   children: React.ReactNode;
 };
@@ -17,7 +17,19 @@ const Header: React.FC<Props> = ({
   className = "",
   children,
 }) => {
-  let styles = `text-${textColor} ${fancy ? "font-test " : " "}`;
+  let color = "";
+  switch (textColor) {
+    case "black":
+      color = "text-black";
+      break;
+    case "white":
+      color = "text-white";
+      break;
+    case "gray":
+      color = "text-gray-900";
+      break;
+  }
+  let styles = `${color} ${fancy ? "font-test " : " "}`;
 
   switch (size) {
     case "large":

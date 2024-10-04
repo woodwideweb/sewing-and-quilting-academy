@@ -4,7 +4,7 @@ import Header from "./Header";
 const Form: FC = () => {
   return (
     <form className="text-gray-900 shadow-xl bg-gray-50 w-full p-8 max-w-[550px] sm:rounded-lg md:max-w-[700px] md:p-12 lg:p-16 xl:max-w-[800px]">
-      <Header size="small" className="text-gray-900 pb-4">
+      <Header size="small" textColor="gray" className="pb-4">
         Contact Me
       </Header>
 

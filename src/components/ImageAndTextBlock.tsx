@@ -12,6 +12,7 @@ type Props = {
   direction: "left" | "right";
   background: "light" | "medium" | "dark";
   className: string;
+  imgSrc: string;
   // we will also need the image eventually
 };
 
@@ -21,6 +22,7 @@ const ImageAndTextBlock: React.FC<Props> = ({
   direction,
   background,
   className,
+  imgSrc,
 }) => {
   return (
     <section
@@ -51,7 +53,8 @@ const ImageAndTextBlock: React.FC<Props> = ({
         {/* I know it's an absolute height. But it's only for small screens so is it okay? */}
         <img
           className="h-[300px] w-full object-cover shadow-md md:w-5/6 md:rounded-full md:h-auto md:aspect-square md:myx-8 lg:w-[304px] xl:myx-12"
-          src={grass.src}
+          // src={grass.src}
+          src={imgSrc}
           alt="grass"
         />
       </div>
