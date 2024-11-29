@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Paragraph from "./Paragraph";
 import beach from "../images/beach.jpg";
-import cx from "../classnames";
+import cx from "../lib/classnames";
 import SetmoreButton from "./SetmoreButton";
 
 type Props = {
@@ -11,6 +11,7 @@ type Props = {
   className?: string;
   image: string;
   buttonType?: "view" | "book";
+  onClick?: () => void;
 };
 
 const ClassCard: React.FC<Props> = ({
@@ -19,6 +20,7 @@ const ClassCard: React.FC<Props> = ({
   className = "",
   image,
   buttonType = "view",
+  onClick = () => {},
 }) => {
   return (
     <div
@@ -27,9 +29,7 @@ const ClassCard: React.FC<Props> = ({
         className
       )}
     >
-      {/* <div className="h-1/2 bg-grass object-cover rounded-t-xl"></div> */}
       <img
-        // src={beach.src}
         src={image}
         alt=""
         className="rounded-t-xl h-36 w-full object-cover md:h-52"
@@ -47,7 +47,10 @@ const ClassCard: React.FC<Props> = ({
         {/* booking button */}
         <div>
           {buttonType === "view" ? (
-            <button className="bg-black font-medium text-white rounded-lg px-8 py-1.5 transition-colors ease-in duration-150 border border-black border-solid hover:bg-white hover:text-gray-900 mdx:px-10 md:py-2 lg:px-10 xl:py-2.5">
+            <button
+              className="bg-black font-medium text-white rounded-lg px-8 py-1.5 transition-colors ease-in duration-150 border border-black border-solid hover:bg-white hover:text-gray-900 mdx:px-10 md:py-2 lg:px-10 xl:py-2.5"
+              onClick={onClick}
+            >
               View
             </button>
           ) : (

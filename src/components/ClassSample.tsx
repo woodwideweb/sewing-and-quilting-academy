@@ -11,7 +11,6 @@ const ClassSample: React.FC = () => {
   return (
     <section className="bg-purple text-center p-8 sm:p-12">
       <Header size="medium" fancy className="pb-4 xl:pb-6">
-        {/* Our Services */}
         What We Do
       </Header>
 

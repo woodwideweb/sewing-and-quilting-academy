@@ -1,5 +1,5 @@
 import React from "react";
-import cx from "../classnames";
+import cx from "../lib/classnames";
 import Header from "./Header";
 import Paragraph from "./Paragraph";
 import "../base.css";

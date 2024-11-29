@@ -9,7 +9,12 @@ import hawksbill from "../images/hawksbill_mountain.jpg";
 import night_sky from "../images/night_sky.jpg";
 import white_cherry from "../images/white_cherry.jpg";
 
-const ClassList: FC = () => {
+type Props = {
+  modalIsOpen: boolean;
+  setModalIsOpen: (arg: boolean) => void;
+};
+
+const ClassList: FC<Props> = ({ modalIsOpen, setModalIsOpen }) => {
   return (
     <section className="p-8 md:flex md:flex-col md:items-center sm:p-12 md:p-14 lg:p-16">
       <Header size="large" fancy className="pb-2 text-center lg:pb-4">
@@ -27,37 +32,59 @@ const ClassList: FC = () => {
           heading="Basic Quilting"
           description="Something Have a quilt that needs to be quilted with a long-arm? We can take care of that."
           image={grass.src}
+          onClick={() => {
+            setModalIsOpen(true);
+          }}
           buttonType="view"
         />
+
         <ClassCard
           heading="Basic Quilting"
           description="Something Have a quilt that needs to be quilted with a long-arm? We can take care of that."
           image={flower.src}
+          onClick={() => {
+            setModalIsOpen(true);
+          }}
         />
         <ClassCard
           heading="Basic Quilting"
           description="Something Have a quilt that needs to be quilted with a long-arm? We can take care of that."
           image={hawksbill.src}
+          onClick={() => {
+            setModalIsOpen(true);
+          }}
         />
         <ClassCard
           heading="Basic Quilting"
           description="Something Have a quilt that needs to be quilted with a long-arm? We can take care of that."
           image={night_sky.src}
+          onClick={() => {
+            setModalIsOpen(true);
+          }}
         />
         <ClassCard
           heading="Basic Quilting"
           description="Something Have a quilt that needs to be quilted with a long-arm? We can take care of that."
           image={white_cherry.src}
+          onClick={() => {
+            setModalIsOpen(true);
+          }}
         />
         <ClassCard
           heading="Basic Quilting"
           description="Something Have a quilt that needs to be quilted with a long-arm? We can take care of that."
           image={beach.src}
+          onClick={() => {
+            setModalIsOpen(true);
+          }}
         />
         <ClassCard
           heading="Basic Quilting"
           description="Something Have a quilt that needs to be quilted with a long-arm? We can take care of that."
           image={flower.src}
+          onClick={() => {
+            setModalIsOpen(true);
+          }}
         />
       </div>
     </section>

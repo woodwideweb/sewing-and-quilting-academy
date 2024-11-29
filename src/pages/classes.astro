@@ -3,11 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import "../base.css";
 import Nav from "../components/Nav";
 import ClassList from "../components/ClassList";
+import ClassWrapper from "../components/ClassWrapper";
 ---
 
 <Layout title="Sewing and Quilting Academy - Sewing classes">
-  <Nav />
+  <!-- <Nav />
   <main class="bg-medium-pink min-h-screen">
     <ClassList />
-  </main>
+  </main> -->
+  <ClassWrapper client:load />
 </Layout>
