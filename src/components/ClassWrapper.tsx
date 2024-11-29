@@ -3,6 +3,7 @@ import ClassList from "./ClassList";
 import Nav from "./Nav";
 import type { SewingClass } from "../lib/types";
 import grass from "../images/cabin_grass.jpg";
+import SetmoreButton from "./SetmoreButton";
 import cx from "../lib/classnames";
 
 const ClassWrapper: FC = () => {
@@ -41,9 +42,7 @@ const ClassWrapper: FC = () => {
             </h2>
             <p className="pb-4">{currentClass.longDescription}</p>
 
-            <button className="bg-black font-medium text-white rounded-lg px-8 py-1.5 transition-colors ease-in duration-150 border border-black border-solid hover:bg-white hover:text-gray-900 mdx:px-10 md:py-2 lg:px-10 xl:py-2.5">
-              Book
-            </button>
+            <SetmoreButton />
           </div>
         </div>
       </section>
